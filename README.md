@@ -20,6 +20,7 @@ The Randomized Search tested multiple combinations and found the following best 
 In a naval defense scenario, a **False Negative** (predicting a Mine is just a Rock) results in a destroyed submarine. A **False Positive** (predicting a Rock is a Mine) just means taking a cautious detour. 
 Therefore, I optimized and evaluated this model based on **Recall**. The model successfully identified 83% of the actual mines in the unseen test data, proving that the `l2` penalty and `0.1` threshold created a strong safety net.
 ## Confusion Matrix
-||Predicted:Rock(0)|Predicted: Mine (1)|
-|**Actual: Rock (0)|15(True Negatives)|9 (False Positives)|
-| **Actual: Mine (1)** |3(False Negatives)|15(True Positives)|
+| | Predicted: Rock (0) | Predicted: Mine (1) |
+| :--- | :--- | :--- |
+| **Actual: Rock (0)** | 15 (True Negatives) | 9 (False Positives) |
+| **Actual: Mine (1)** | 3 (False Negatives) | 15 (True Positives) |
